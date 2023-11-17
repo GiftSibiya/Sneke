@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:sneke/elements/tab_icons.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    //// Tab Controller
     return DefaultTabController(
-      length: 4,
+      length: 5,
+
+      //// Main Scaffold
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
@@ -52,7 +56,32 @@ class MainPage extends StatelessWidget {
             ),
 
             //// TastBar thing
-            TabBar(tabs: [])
+            const TabBar(tabs: [
+              TabTiles(iconPath: "fdfd", snakName: "Donut"),
+              TabTiles(iconPath: "pic string here", snakName: "Donut"),
+              TabTiles(iconPath: "pic string here", snakName: "Donut"),
+              TabTiles(iconPath: "pic string here", snakName: "Donut"),
+              TabTiles(iconPath: "pic string here", snakName: "Donut"),
+            ]),
+            Expanded(
+              child: TabBarView(children: [
+                Container(
+                  color: Colors.blue,
+                ),
+                Container(
+                  color: Colors.green,
+                ),
+                Container(
+                  color: Colors.red,
+                ),
+                Container(
+                  color: Colors.purple,
+                ),
+                Container(
+                  color: Colors.orange,
+                ),
+              ]),
+            )
           ],
         ),
       ),
