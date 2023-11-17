@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sneke/constants/image_strings.dart';
 import 'package:sneke/elements/tab_icons.dart';
+import 'package:sneke/pages/tab_pages/donut_tab.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -47,27 +49,28 @@ class MainPage extends StatelessWidget {
                       style: TextStyle(color: Colors.black87, fontSize: 20),
                       children: <TextSpan>[
                     TextSpan(
-                        text: "  Sneke",
+                        text: " Sneke",
                         style: TextStyle(
                             fontSize: 30,
                             color: Colors.orange,
                             fontWeight: FontWeight.bold))
                   ])),
             ),
+            SizedBox(
+              height: 10,
+            ),
 
             //// TastBar thing
             const TabBar(tabs: [
-              TabTiles(iconPath: "fdfd", snakName: "Donut"),
-              TabTiles(iconPath: "pic string here", snakName: "Donut"),
-              TabTiles(iconPath: "pic string here", snakName: "Donut"),
-              TabTiles(iconPath: "pic string here", snakName: "Donut"),
-              TabTiles(iconPath: "pic string here", snakName: "Donut"),
+              TabTiles(iconPath: donut_icon, snakName: "Donut"),
+              TabTiles(iconPath: burger_icon, snakName: "Burger"),
+              TabTiles(iconPath: smoothie_icon, snakName: "Smoothie"),
+              TabTiles(iconPath: pancake_icon, snakName: "pancake"),
+              TabTiles(iconPath: pizza_icon, snakName: "pizza"),
             ]),
             Expanded(
               child: TabBarView(children: [
-                Container(
-                  color: Colors.blue,
-                ),
+                DonutTabPage(),
                 Container(
                   color: Colors.green,
                 ),
