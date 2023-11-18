@@ -56,7 +56,7 @@ class MainPage extends StatelessWidget {
                             fontWeight: FontWeight.bold))
                   ])),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
 
@@ -70,7 +70,7 @@ class MainPage extends StatelessWidget {
             ]),
             Expanded(
               child: TabBarView(children: [
-                DonutTabPage(),
+                const DonutTabPage(),
                 Container(
                   color: Colors.green,
                 ),

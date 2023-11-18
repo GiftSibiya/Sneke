@@ -1,5 +1,7 @@
 // -- Icon Classes --//
 
+import 'package:flutter/material.dart';
+
 class TabIcons {
   final String iconPath;
   final String iconName;
@@ -11,11 +13,13 @@ class Snekes {
   final String snakPicPath;
   final String snekName;
   final String sellingShop;
-  final double snakPrice;
+  final String snakPrice;
+  final Color snakBG;
 
   Snekes(
       {required this.snakPicPath,
       required this.snekName,
       required this.sellingShop,
-      required this.snakPrice});
+      required this.snakPrice,
+      required this.snakBG});
 }
