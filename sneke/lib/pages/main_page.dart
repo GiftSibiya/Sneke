@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sneke/constants/image_strings.dart';
 import 'package:sneke/elements/tab_icons.dart';
+import 'package:sneke/pages/tab_pages/burger_tab.dart';
 import 'package:sneke/pages/tab_pages/donut_tab.dart';
 
 class MainPage extends StatelessWidget {
@@ -71,9 +72,7 @@ class MainPage extends StatelessWidget {
             Expanded(
               child: TabBarView(children: [
                 const DonutTabPage(),
-                Container(
-                  color: Colors.green,
-                ),
+                const BurgerTabPage(),
                 Container(
                   color: Colors.red,
                 ),

@@ -13,7 +13,7 @@ final appTabIcon = [
 ];
 
 //--- Sneke tiles class ---//
-final snakTiles = [
+final donutTiles = [
   Snekes(
       snakPicPath: donut1,
       snekName: "Chocolate sprinkle",
@@ -74,4 +74,61 @@ final snakTiles = [
       sellingShop: "Woolworths",
       snakPrice: "45.00",
       snakBG: Colors.brown.shade100),
+];
+
+final burgerTiles = [
+  Snekes(
+      snakPicPath: burger1,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.brown.shade100),
+  Snekes(
+      snakPicPath: burger2,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.orange.shade100),
+  Snekes(
+      snakPicPath: burger3,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.red.shade100),
+  Snekes(
+      snakPicPath: burger4,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.green.shade100),
+  Snekes(
+      snakPicPath: burger5,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.purple.shade100),
+  Snekes(
+      snakPicPath: burger6,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.pink.shade100),
+  Snekes(
+      snakPicPath: burger7,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.blue.shade100),
+  Snekes(
+      snakPicPath: burger8,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.brown.shade100),
+  Snekes(
+      snakPicPath: burger9,
+      snekName: "Classic Chicken",
+      sellingShop: "Burger King",
+      snakPrice: "49.90",
+      snakBG: Colors.green.shade100)
 ];

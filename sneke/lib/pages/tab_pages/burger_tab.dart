@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:sneke/constants/image_strings.dart';
 import 'package:sneke/constants/samples.dart';
 
-class DonutTabPage extends StatelessWidget {
-  const DonutTabPage({
+class BurgerTabPage extends StatelessWidget {
+  const BurgerTabPage({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: donutTiles.length,
+      itemCount: burgerTiles.length,
       gridDelegate:
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (context, index) {
@@ -23,7 +23,7 @@ class DonutTabPage extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: (donutTiles[index].snakBG),
+              color: (burgerTiles[index].snakBG),
             ),
 
             //-- Box Internals --//
@@ -42,7 +42,7 @@ class DonutTabPage extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
                         child: Text(
-                          "R${donutTiles[index].snakPrice}",
+                          "R${burgerTiles[index].snakPrice}",
                           style: const TextStyle(fontSize: 13),
                         ),
                       )),
@@ -56,7 +56,7 @@ class DonutTabPage extends StatelessWidget {
                 //-- Snak Picture
                 SizedBox(
                     height: 70,
-                    child: Image.asset(donutTiles[index].snakPicPath)),
+                    child: Image.asset(burgerTiles[index].snakPicPath)),
 
                 //// Space nyana
                 const SizedBox(
@@ -72,14 +72,14 @@ class DonutTabPage extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: Text(
-                        donutTiles[index].sellingShop,
+                        burgerTiles[index].sellingShop,
                         style: const TextStyle(fontSize: 10),
                       ),
                     )),
 
                 //---- Snak Name
                 Text(
-                  donutTiles[index].snekName,
+                  burgerTiles[index].snekName,
                   style: const TextStyle(
                       fontSize: 15, fontWeight: FontWeight.bold),
                 )
