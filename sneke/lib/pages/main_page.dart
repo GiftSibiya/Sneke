@@ -19,13 +19,16 @@ class MainPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          leading: const
-              ////---- Burger icon
-              Icon(
-            Icons.menu,
-            size: 30,
-            color: Colors.black87,
-          ),
+          leading: Builder(builder: (context) {
+            return IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                icon: Icon(
+                  Icons.menu,
+                  color: Colors.pink,
+                ));
+          }),
 
           //-- User Icon Button
           actions: [
@@ -38,6 +41,7 @@ class MainPage extends StatelessWidget {
                 ))
           ],
         ),
+        drawer: Drawer(),
 
         //// Main Body of the application //
         body: Column(
