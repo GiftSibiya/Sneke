@@ -9,19 +9,19 @@ class TabTiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tab(
-      height: 70,
+      height: 90,
       child: Column(
         children: [
           Image.asset(
             iconPath,
           ),
           const SizedBox(
-            height: 10,
+            height: 12,
           ),
           Text(
             snakName,
             style: const TextStyle(
-              fontSize: 7.4,
+              fontSize: 10,
               color: Colors.black87,
             ),
           )

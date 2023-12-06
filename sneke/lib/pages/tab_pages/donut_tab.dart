@@ -55,7 +55,7 @@ class DonutTabPage extends StatelessWidget {
 
                 //-- Snak Picture
                 SizedBox(
-                    height: 70,
+                    height: 60,
                     child: Image.asset(donutTiles[index].snakPicPath)),
 
                 //// Space nyana
